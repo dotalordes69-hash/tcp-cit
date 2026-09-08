@@ -1,0 +1,230 @@
+/* ================= GLOBAL ================= */
+
+html{
+    overflow-y:scroll;
+}
+
+body{
+    display:flex;
+    margin:0;
+    font-family:'Segoe UI',sans-serif;
+    background:#f5f6fa;
+}
+
+
+/* ================= WRAPPER ================= */
+
+.wrapper{
+    display:flex;
+    width:100%;
+}
+
+
+/* ================= SIDEBAR ================= */
+
+.sidebar{
+    position:fixed;
+    top:0;
+    left:0;
+    width:clamp(210px,18vw,250px);
+    height:100vh;
+    box-sizing:border-box;
+    background:#b30000;
+    color:#fff;
+    overflow-y:auto;
+    box-shadow:4px 0 20px rgba(0,0,0,.15);
+    z-index:1000;
+}
+
+
+/* LOGO */
+
+.sidebar .logo{
+    text-align:center;
+    padding:clamp(15px,2vw,25px) 15px 12px;
+}
+
+.sidebar .logo img{
+    width:clamp(55px,6vw,85px);
+    height:clamp(55px,6vw,85px);
+    border-radius:50%;
+    background:#fff;
+    padding:4px;
+    box-shadow:0 4px 12px rgba(0,0,0,.2);
+}
+
+
+/* USER */
+
+.sidebar .user-info{
+    text-align:center;
+    padding:0 15px 15px;
+}
+
+.sidebar .user-info h3{
+    font-size:clamp(12px,1.2vw,15px);
+    margin-top:8px;
+    font-weight:600;
+}
+
+
+/* LOGOUT */
+
+.sidebar .logout{
+    background:#fff;
+    color:#8B0000;
+    border:none;
+    border-radius:25px;
+    padding:7px 15px;
+    font-size:13px;
+    font-weight:600;
+    transition:.3s;
+}
+
+
+/* LINE */
+
+.sidebar hr{
+    border:none;
+    height:1px;
+    background:rgba(255,255,255,.15);
+    margin:8px 15px;
+}
+
+
+/* MENU TITLE */
+
+.menu-title{
+    padding:8px 18px;
+    font-size:10px;
+    text-transform:uppercase;
+    letter-spacing:1px;
+    color:rgba(255,255,255,.7);
+}
+
+
+/* MENU LINKS */
+
+.sidebar a{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    padding:11px 16px;
+    margin:3px 8px;
+    border-radius:10px;
+    text-decoration:none;
+    color:#fff;
+    font-size:clamp(12px,1vw,14px);
+    min-height:42px;
+    transition:.2s;
+}
+
+
+.sidebar a i{
+    width:20px;
+    min-width:20px;
+    text-align:center;
+    font-size:15px;
+}
+
+
+.sidebar a:hover{
+    background:rgba(255,255,255,.12);
+}
+
+
+.sidebar a.active{
+    background:#fff;
+    color:#8B0000;
+    font-weight:600;
+}
+
+
+/* ================= CONTENT ================= */
+
+.content{
+    margin-left:clamp(210px,18vw,250px);
+    width:calc(100% - clamp(210px,18vw,250px));
+    padding:clamp(12px,2vw,25px);
+}
+
+
+/* ================= SUBMENU ================= */
+
+.submenu{
+    display:none;
+    margin-left:15px;
+}
+
+.submenu.show{
+    display:block;
+}
+
+.submenu a{
+    font-size:12px;
+    padding:8px 12px;
+    margin:2px 8px;
+    min-height:auto;
+}
+
+
+.menu-toggle{
+    cursor:pointer;
+}
+
+
+/* ================= LAPTOP ================= */
+
+@media(max-width:1366px){
+
+    .sidebar{
+        width:220px;
+    }
+
+    .content{
+        margin-left:220px;
+        width:calc(100% - 220px);
+        padding:15px;
+    }
+
+    .sidebar a{
+        padding:10px 14px;
+        font-size:13px;
+    }
+}
+
+
+/* ================= TABLET ================= */
+
+@media(max-width:992px){
+
+    .sidebar{
+        width:200px;
+    }
+
+    .content{
+        margin-left:200px;
+        width:calc(100% - 200px);
+    }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:768px){
+
+    .sidebar{
+        position:relative;
+        width:100%;
+        height:auto;
+    }
+
+    .wrapper{
+        flex-direction:column;
+    }
+
+    .content{
+        margin-left:0;
+        width:100%;
+    }
+}

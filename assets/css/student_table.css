@@ -1,0 +1,181 @@
+/* ================= STUDENT TABLE CARD ================= */
+
+.student-table-card{
+    background:#ffffff;
+    border-radius:12px;
+    overflow:hidden;
+    border:1px solid #dee2e6;
+    box-shadow:0 2px 8px rgba(0,0,0,.05);
+    width:100%;
+}
+
+
+/* TABLE */
+
+.student-table{
+    margin-bottom:0;
+    width:100%;
+}
+
+.student-table thead th{
+    background:#f8f9fa;
+    color:#495057;
+    font-size:clamp(11px,1vw,13px);
+    font-weight:700;
+    border-bottom:2px solid #b30000;
+    padding:clamp(8px,1vw,12px);
+    white-space:nowrap;
+}
+
+.student-table tbody td{
+    padding:clamp(8px,1vw,12px);
+    vertical-align:middle;
+    font-size:clamp(12px,1vw,14px);
+    color:#495057;
+    white-space:nowrap;
+}
+
+.student-table tbody tr{
+    transition:.2s;
+}
+
+.student-table tbody tr:hover{
+    background:#fff8f8;
+}
+
+
+.student-name{
+    font-weight:600;
+    color:#212529;
+}
+
+
+/* ================= STATUS BADGE ================= */
+
+.badge-status{
+    padding:4px 10px;
+    border-radius:30px;
+    font-size:11px;
+    font-weight:600;
+    display:inline-block;
+    white-space:nowrap;
+}
+
+.badge-official,
+.badge-complete,
+.badge-paid{
+    background:#d1e7dd;
+    color:#0f5132;
+}
+
+.badge-unofficial,
+.badge-incomplete,
+.badge-unpaid{
+    background:#f8d7da;
+    color:#842029;
+}
+
+.badge-partial{
+    background:#fff3cd;
+    color:#664d03;
+}
+
+
+/* ================= TABLE HEADER ================= */
+
+.student-table-header{
+    background:linear-gradient(90deg,#b30000,#C1121F);
+    color:#fff;
+    padding:clamp(10px,1.5vw,14px) clamp(12px,2vw,20px);
+    font-size:clamp(13px,1.2vw,15px);
+    font-weight:600;
+    letter-spacing:.3px;
+}
+
+
+/* ================= VIEW BUTTON ================= */
+
+.btn-view{
+    background:#b30000;
+    color:#fff;
+    border:none;
+    border-radius:7px;
+    padding:5px 12px;
+    font-size:12px;
+    font-weight:600;
+    transition:.2s;
+    white-space:nowrap;
+}
+
+.btn-view:hover{
+    background:#C1121F;
+    color:#fff;
+}
+
+
+.student-table tbody tr td{
+    border-color:#edf0f2;
+}
+
+
+.student-table thead th:first-child{
+    border-top-left-radius:8px;
+}
+
+.student-table thead th:last-child{
+    border-top-right-radius:8px;
+}
+
+
+/* ================= LAPTOP 1366px ================= */
+
+@media(max-width:1366px){
+
+    .student-table thead th{
+        padding:8px;
+        font-size:11px;
+    }
+
+    .student-table tbody td{
+        padding:8px;
+        font-size:12px;
+    }
+
+    .badge-status{
+        padding:3px 8px;
+        font-size:10px;
+    }
+
+    .btn-view{
+        padding:4px 10px;
+        font-size:11px;
+    }
+}
+
+
+/* ================= TABLET ================= */
+
+@media(max-width:992px){
+
+    .student-table-card{
+        overflow-x:auto;
+    }
+
+    .student-table{
+        min-width:800px;
+    }
+}
+
+
+/* ================= MOBILE ================= */
+
+@media(max-width:576px){
+
+    .student-table-header{
+        font-size:12px;
+    }
+
+    .student-table{
+        min-width:700px;
+    }
+}

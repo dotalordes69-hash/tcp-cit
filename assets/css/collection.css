@@ -1,0 +1,296 @@
+
+
+body{
+    background:#f5f7fb;
+}
+
+.content{
+    padding:25px;
+}
+
+.card{
+    border:none;
+    border-radius:16px;
+    box-shadow:0 2px 12px rgba(0,0,0,0.05);
+}
+
+.card-header{
+    background:#fff !important;
+    color:#212529 !important;
+    border-bottom:1px solid #e9ecef;
+    font-weight:600;
+}
+
+.form-control,
+.form-select{
+    border-radius:10px;
+    height:45px;
+    border:1px solid #dee2e6;
+}
+
+.form-control:focus,
+.form-select:focus{
+    box-shadow:none;
+    border-color:#0d6efd;
+}
+
+.bg-light{
+    background:#f8f9fa !important;
+}
+
+.table{
+    margin-bottom:0;
+}
+
+.table th{
+    background:#f8f9fa;
+    color:#495057;
+    border-bottom:2px solid #dee2e6;
+}
+
+.btn-primary{
+    border-radius:10px;
+}
+
+.btn-success{
+    border-radius:10px;
+}
+
+.section-title{
+    font-size:14px;
+    font-weight:600;
+    color:#6c757d;
+    margin-bottom:15px;
+    text-transform:uppercase;
+    letter-spacing:.5px;
+}#transactionModal .modal-content{
+    border:none;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.10);
+}
+
+#transactionModal .modal-header{
+    background:#fff;
+    border-bottom:1px solid #e9ecef;
+    padding:18px 25px;
+}
+
+#transactionModal .modal-title{
+    font-size:18px;
+    font-weight:700;
+    color:#212529;
+}
+
+#transactionModal .modal-body{
+    background:#f8fafc;
+    padding:20px;
+}
+
+#transactionModal .btn-close{
+    filter:none;
+}
+
+#transactionModal .card{
+    border:none;
+    border-radius:14px;
+    background:#fff;
+    box-shadow:0 2px 12px rgba(0,0,0,.05);
+}
+
+#transactionModal .card-body{
+    padding:20px;
+}
+
+#transactionModal .form-label{
+    font-size:12px;
+    font-weight:600;
+    text-transform:uppercase;
+    letter-spacing:.5px;
+    color:#6c757d;
+    margin-bottom:6px;
+}
+
+#transactionModal .form-control{
+    height:45px;
+    border-radius:10px;
+    border:1px solid #dee2e6;
+    background:#fff;
+}
+
+#transactionModal .form-control:focus{
+    box-shadow:none;
+    border-color:#0d6efd;
+}
+
+#studentName{
+    font-weight:600;
+    color:#212529;
+    background:#fff !important;
+}
+
+#studentBalance{
+    text-align:right;
+    font-size:18px;
+    font-weight:700;
+    color:#dc3545;
+    background:#fff !important;
+}
+
+#transactionModal .btn-primary{
+    border-radius:10px;
+    padding:0 20px;
+    font-weight:600;
+}
+
+#transactionResult .transaction-card{
+    border:none;
+    border-radius:14px;
+    overflow:hidden;
+    box-shadow:0 2px 12px rgba(0,0,0,.05);
+}
+
+#transactionResult .header{
+    background:#fff;
+    border-bottom:1px solid #e9ecef;
+    padding:15px 20px;
+}
+
+#transactionResult table th{
+    background:#f8f9fa;
+    font-size:12px;
+    text-transform:uppercase;
+    letter-spacing:.4px;
+    color:#6c757d;
+}
+
+#transactionResult table td{
+    font-size:14px;
+    color:#212529;
+}
+.form-label{
+    margin-bottom:4px;
+    font-size:13px;
+}
+
+.card-body{
+    padding:18px !important;
+}
+#filterTransactionBtn,
+#resetTransactionBtn{
+    height:38px;
+    border-radius:8px;
+    font-size:14px;
+}
+.registrar-icon{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    background:linear-gradient(135deg,#dc3545,#b02a37);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:#fff;
+    font-size:24px;
+}
+
+.registrar-icon::before{
+    content:"📋";
+}
+
+#transactionModal .modal-content{
+    border:none;
+    border-radius:15px;
+    overflow:hidden;
+}
+
+#transactionModal .modal-header{
+    background:#ffffff;
+    border-bottom:1px solid #dee2e6;
+}
+
+#transactionModal .modal-title{
+    font-weight:700;
+    color:#212529;
+}
+
+#transactionModal .modal-header small{
+    color:#6c757d;
+}
+
+#transactionModal .form-label{
+    font-weight:600;
+    color:#495057;
+}
+
+#transactionModal .form-control{
+    border-radius:10px;
+}
+
+#transactionModal .card{
+    border-radius:12px;
+}
+
+#transactionModal .btn-danger{
+    border-radius:10px;
+}
+
+#transactionModal .btn-secondary{
+    border-radius:10px;
+}
+
+
+.status-timeline{
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    gap:6px;
+}
+
+.status-step{
+    padding:4px 10px;
+    border-radius:20px;
+    font-size:11px;
+    font-weight:600;
+    background:#e9ecef;
+    color:#6c757d;
+}
+
+.status-line{
+    width:18px;
+    height:2px;
+    background:#ced4da;
+}
+
+.done{
+    background:#198754;
+    color:#fff;
+}
+
+.current{
+    background:#0d6efd;
+    color:#fff;
+    animation:pulse .8s ease;
+}
+
+.pending{
+    background:#e9ecef;
+    color:#6c757d;
+}
+
+@keyframes pulse{
+
+0%{
+transform:scale(.95);
+}
+
+50%{
+transform:scale(1.05);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+

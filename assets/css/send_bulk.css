@@ -1,0 +1,471 @@
+/* ==================================================
+   BULK EMAIL MODAL - REGISTRAR STYLE
+================================================== */
+/* Disable auto uppercase for email fields */
+input[name="subject"],
+textarea[name="message"] {
+    text-transform: none !important;
+}
+/* ================= MODAL ================= */
+
+#bulkEmailModal .modal-dialog{
+
+    max-width:1000px;
+
+}
+
+
+
+
+#bulkEmailModal .modal-content{
+
+    border:none;
+
+    border-radius:16px;
+
+    background:#fff;
+
+    overflow:hidden;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+
+}
+
+
+
+/* ================= HEADER ================= */
+
+
+#bulkEmailModal .modal-header{
+
+    background:#C1121F;
+
+    color:#fff;
+
+    padding:18px 24px;
+
+    border:none;
+
+}
+
+
+#bulkEmailModal .modal-title{
+
+    font-size:18px;
+
+    font-weight:700;
+
+}
+
+
+#bulkEmailModal .modal-header small{
+
+    font-size:12px;
+
+    color:rgba(255,255,255,.85);
+
+}
+
+
+#bulkEmailModal .btn-close{
+
+    filter:invert(1);
+
+}
+
+
+
+/* ================= BODY ================= */
+
+
+#bulkEmailModal .modal-body{
+
+    background:#F6F7F9;
+
+    padding:25px;
+
+}
+
+
+
+/* ================= CARD ================= */
+
+
+#bulkEmailModal .card{
+
+    border:none;
+
+    background:#fff;
+
+    border-radius:14px;
+
+    box-shadow:0 5px 18px rgba(0,0,0,.06);
+
+    overflow:hidden;
+
+}
+
+
+
+#bulkEmailModal .card-header{
+
+    background:#fff;
+
+    color:#C1121F;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    padding:14px 18px;
+
+    border-bottom:1px solid #eeeeee;
+
+}
+
+
+
+#bulkEmailModal .card-body{
+
+    padding:18px;
+
+}
+
+
+
+/* ================= LABEL ================= */
+
+
+#bulkEmailModal .form-label{
+
+    font-size:13px;
+
+    font-weight:600;
+
+    color:#343A40;
+
+    margin-bottom:6px;
+
+}
+
+
+
+/* ================= INPUT ================= */
+
+
+#bulkEmailModal .form-control,
+#bulkEmailModal .form-select{
+
+
+    height:42px;
+
+    border-radius:10px;
+
+    border:1px solid #DDE1E6;
+
+    font-size:13px;
+
+    background:#fff;
+
+}
+
+
+
+#bulkEmailModal textarea.form-control{
+
+    height:auto;
+
+    min-height:160px;
+
+    resize:none;
+
+}
+
+
+
+#bulkEmailModal .form-control:focus,
+#bulkEmailModal .form-select:focus{
+
+
+    border-color:#C1121F;
+
+    box-shadow:0 0 0 .15rem rgba(193,18,31,.12);
+
+}
+
+
+
+/* ================= BUTTON ================= */
+
+
+#filterBtn,
+.btn-send,
+#bulkEmailModal .btn-danger{
+
+
+    background:#C1121F;
+
+    color:#fff;
+
+    border:none;
+
+    border-radius:10px;
+
+    padding:10px 18px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+    transition:.2s;
+
+}
+
+
+
+#filterBtn:hover,
+.btn-send:hover,
+#bulkEmailModal .btn-danger:hover{
+
+
+    background:#A80F1A;
+
+    color:#fff;
+
+}
+
+
+
+#resetFilterBtn{
+
+
+    background:#fff;
+
+    color:#C1121F;
+
+    border:1px solid #C1121F;
+
+    border-radius:10px;
+
+    padding:10px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+
+
+#resetFilterBtn:hover{
+
+
+    background:#C1121F;
+
+    color:#fff;
+
+}
+
+
+
+/* ================= RECIPIENT LIST ================= */
+
+
+#recipientList{
+
+
+    height:300px;
+
+    overflow-y:auto;
+
+    background:#FAFAFA;
+
+    border-radius:10px;
+
+    padding:10px;
+
+}
+
+
+
+#recipientList::-webkit-scrollbar{
+
+    width:6px;
+
+}
+
+
+
+#recipientList::-webkit-scrollbar-thumb{
+
+
+    background:#C1121F;
+
+    border-radius:20px;
+
+}
+
+
+
+/* ================= STUDENT ITEM ================= */
+
+
+.student-item{
+
+
+    background:#fff;
+
+    border-radius:10px;
+
+    padding:12px;
+
+    margin-bottom:10px;
+
+    border-left:4px solid #C1121F;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.05);
+
+    transition:.2s;
+
+}
+
+
+
+.student-item:hover{
+
+
+    background:#FFF7F7;
+
+    transform:translateY(-2px);
+
+}
+
+
+
+.student-name{
+
+
+    font-size:13px;
+
+    font-weight:700;
+
+    color:#212529;
+
+}
+
+
+
+.student-email{
+
+
+    font-size:12px;
+
+    color:#6C757D;
+
+    margin-top:3px;
+
+}
+
+
+
+/* ================= ALERT ================= */
+
+
+#bulkEmailModal .alert{
+
+
+    background:#FFF5F5;
+
+    color:#8B0000;
+
+    border:none;
+
+    border-left:4px solid #C1121F;
+
+    border-radius:10px;
+
+    font-size:12px;
+
+}
+
+
+
+/* ================= SIGNATURE ================= */
+
+
+#bulkSignaturePreview{
+
+
+    background:#F8F9FA;
+
+    border-radius:10px;
+
+}
+
+
+
+/* ================= FOOTER ================= */
+
+
+#bulkEmailModal .modal-footer{
+
+
+    background:#fff;
+
+    border-top:1px solid #ECECEC;
+
+    padding:16px 24px;
+
+}
+
+
+
+/* ================= CANCEL BUTTON ================= */
+
+
+#bulkEmailModal .btn-light{
+
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+
+
+/* ================= RESPONSIVE ================= */
+
+
+@media(max-width:768px){
+
+
+#bulkEmailModal .modal-body{
+
+    padding:15px;
+
+}
+
+
+#recipientList{
+
+    height:230px;
+
+}
+
+
+#filterBtn,
+#resetFilterBtn,
+.btn-send{
+
+
+    width:100%;
+
+}
+
+
+}

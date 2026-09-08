@@ -1,0 +1,143 @@
+/* ================= FILTER CARD ================= */
+
+.filter-card{
+    background:#fff;
+    border:1px solid #e9ecef;
+    border-radius:12px;
+    padding:clamp(10px,1.5vw,16px);
+    margin-bottom:18px;
+    box-shadow:0 3px 10px rgba(0,0,0,.05);
+}
+
+.filter-header{
+    font-size:clamp(12px,1vw,14px);
+    font-weight:700;
+    color:#8B0000;
+    margin-bottom:12px;
+    text-transform:uppercase;
+    letter-spacing:.4px;
+}
+
+.filter-card .form-label{
+    font-size:clamp(11px,.9vw,12px);
+    font-weight:600;
+    color:#495057;
+    margin-bottom:4px;
+}
+
+.filter-card .form-control,
+.filter-card .form-select{
+    border-radius:8px;
+    border:1px solid #dee2e6;
+    height:36px;
+    font-size:13px;
+}
+
+.filter-card .form-control:focus,
+.filter-card .form-select:focus{
+    border-color:#C1121F;
+    box-shadow:0 0 0 .15rem rgba(193,18,31,.15);
+}
+
+/* ================= BUTTONS ================= */
+
+.btn-filter,
+.btn-reset{
+    height:36px;
+    min-width:80px;
+    padding:0 14px;
+    border-radius:8px;
+    font-size:12px;
+    font-weight:600;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition:.2s ease;
+    text-decoration:none;
+    white-space:nowrap;
+}
+
+.btn-filter{
+    background:#8B0000;
+    border:1px solid #8B0000;
+    color:#fff;
+}
+
+.btn-filter:hover{
+    background:#700000;
+    border-color:#700000;
+    color:#fff;
+}
+
+.btn-reset{
+    background:#fff;
+    border:1px solid #dee2e6;
+    color:#495057;
+}
+
+.btn-reset:hover{
+    background:#f8f9fa;
+    border-color:#ced4da;
+    color:#212529;
+}
+
+.filter-actions{
+    display:flex;
+    gap:8px;
+    flex-wrap:wrap;
+}
+
+/* ================= LAPTOP (1366px pababa) ================= */
+
+@media (max-width:1366px){
+
+    .filter-card{
+        padding:12px;
+    }
+
+    .filter-card .form-control,
+    .filter-card .form-select{
+        height:34px;
+        font-size:12px;
+    }
+
+    .btn-filter,
+    .btn-reset{
+        height:34px;
+        min-width:75px;
+        font-size:11px;
+        padding:0 12px;
+    }
+}
+
+/* ================= TABLET ================= */
+
+@media (max-width:992px){
+
+    .filter-actions{
+        width:100%;
+    }
+
+    .btn-filter,
+    .btn-reset{
+        flex:1;
+    }
+}
+
+/* ================= MOBILE ================= */
+
+@media (max-width:576px){
+
+    .filter-card{
+        padding:10px;
+    }
+
+    .filter-actions{
+        flex-direction:column;
+    }
+
+    .btn-filter,
+    .btn-reset{
+        width:100%;
+    }
+}

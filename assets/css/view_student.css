@@ -1,0 +1,230 @@
+/* ================= LAYOUT ================= */
+
+body{
+    background:#ffffff;
+    overflow-x:hidden;
+    font-family:'Segoe UI',sans-serif;
+}
+
+.main-content{
+    margin-left:250px;
+    width:calc(100% - 250px);
+    min-height:100vh;
+    padding:25px;
+    box-sizing:border-box;
+}
+
+
+
+/* ================= HEADERS ================= */
+
+.card-header,
+.credentials-header,
+.payment-header{
+    background:#C1121F;
+    color:#fff;
+    padding:14px 18px;
+    border:none;
+}
+
+.card-header h5,
+.credentials-header h5,
+.payment-header h5{
+    margin:0;
+    font-size:15px;
+    font-weight:700;
+}
+
+.card-header small,
+.credentials-header small,
+.payment-header small{
+    opacity:.9;
+}
+
+/* ================= STUDENT INFO ================= */
+
+.student-info-label{
+    color:#6c757d;
+    font-size:13px;
+}
+
+.student-info-value{
+    font-weight:600;
+    color:#212529;
+}
+
+/* ================= TABS ================= */
+/* ================= STUDENT TABS ================= */
+
+.student-tabs{
+    display:flex;
+    flex-wrap:wrap;
+    gap:0;
+    border-bottom:2px solid #e9ecef;
+    margin-bottom:20px;
+}
+
+.student-tabs a{
+    text-decoration:none;
+    padding:12px 22px;
+    color:#6c757d;
+    font-size:14px;
+    font-weight:600;
+    background:transparent;
+    border:none;
+    border-bottom:3px solid transparent;
+    transition:all .2s ease;
+}
+
+.student-tabs a:hover{
+    color:#C1121F;
+    background:#fff5f5;
+}
+
+.student-tabs a.active{
+    color:#C1121F;
+    background:#fff;
+    border-bottom:3px solid #C1121F;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+    .student-tabs{
+        overflow-x:auto;
+        flex-wrap:nowrap;
+        white-space:nowrap;
+    }
+
+    .student-tabs a{
+        flex-shrink:0;
+    }
+
+}
+/* ================= TABLE ================= */
+
+.table-responsive{
+    overflow-x:auto;
+}
+
+.table{
+    margin-bottom:0;
+}
+
+.table thead th{
+    background:#fafafa;
+    color:#C1121F;
+    font-size:12px;
+    font-weight:700;
+    border-bottom:2px solid #C1121F;
+    white-space:nowrap;
+}
+
+.table td{
+    font-size:13px;
+    vertical-align:middle;
+}
+
+/* ================= BUTTONS ================= */
+
+.btn-update,
+.btn-maroon{
+    background:#C1121F;
+    border:none;
+    color:#fff;
+    font-weight:600;
+}
+
+.btn-update:hover,
+.btn-maroon:hover{
+    background:#a50f1a;
+    color:#fff;
+}
+
+.btn-outline-maroon{
+    border:1px solid #C1121F;
+    color:#C1121F;
+}
+
+.btn-outline-maroon:hover{
+    background:#C1121F;
+    color:#fff;
+}
+
+/* ================= STATUS BADGES ================= */
+
+.status-submitted,
+.status-verified{
+    background:#198754;
+    color:#fff;
+    border-radius:30px;
+    padding:4px 10px;
+    font-size:11px;
+    font-weight:600;
+}
+
+.status-missing,
+.status-pending{
+    background:#fff3cd;
+    color:#856404;
+    border-radius:30px;
+    padding:4px 10px;
+    font-size:11px;
+    font-weight:600;
+}
+
+/* ================= MONITOR ITEMS ================= */
+
+.credential-item{
+    border:1px solid #e5e7eb;
+    border-radius:10px;
+    background:#fff;
+    padding:12px;
+}
+
+.credential-title{
+    color:#C1121F;
+    font-size:13px;
+    font-weight:700;
+}
+
+.info-box{
+    background:#fafafa;
+    border:1px solid #eee;
+    border-radius:8px;
+    padding:8px;
+    margin-top:8px;
+    font-size:12px;
+}
+
+/* ================= PAGINATION ================= */
+
+.pagination .page-link{
+    color:#C1121F;
+}
+
+.pagination .active .page-link{
+    background:#C1121F;
+    border-color:#C1121F;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:991px){
+
+    .main-content{
+        margin-left:0;
+        width:100%;
+        padding:15px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .table{
+        min-width:700px;
+    }
+
+}

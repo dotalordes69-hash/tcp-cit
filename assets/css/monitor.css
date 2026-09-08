@@ -1,0 +1,225 @@
+/* ================= MONITOR CARD ================= */
+
+.credentials-card{
+    border:none;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+    background:#fff;
+    margin-bottom:20px;
+}
+
+/* ================= HEADER ================= */
+
+.credentials-header{
+    background:#C1121F;
+    color:#fff;
+    padding:12px 16px;
+}
+
+.credentials-header h5{
+    margin:0;
+    font-size:16px;
+    font-weight:700;
+}
+
+.credentials-header small{
+    font-size:12px;
+    opacity:.85;
+}
+
+/* ================= MONITOR ITEM ================= */
+
+.credential-item{
+    border:none !important;
+    border-radius:10px;
+    background:#fff;
+    padding:12px;
+    transition:.2s ease;
+    height:100%;
+}
+
+.credential-item:hover{
+    transform:translateY(-2px);
+    box-shadow:0 5px 12px rgba(0,0,0,.10);
+}
+
+/* ================= TITLE ================= */
+
+.credential-title{
+    font-size:13px;
+    font-weight:700;
+    color:#343a40;
+}
+
+/* ================= INFO BOX ================= */
+
+.info-box{
+    background:#f8f9fa;
+    border-radius:8px;
+    padding:8px;
+    margin-top:8px;
+    font-size:12px;
+}
+
+/* ================= STATUS ================= */
+
+.label-status{
+    padding:4px 10px;
+    border-radius:20px;
+    font-size:11px;
+    font-weight:600;
+    white-space:nowrap;
+}
+
+.status-submitted{
+    background:#198754;
+    color:#fff;
+}
+
+.status-missing{
+    background:#ffc107;
+    color:#212529;
+}
+
+/* ================= DOCS TABLE ================= */
+
+.docs-table{
+    width:100%;
+    min-width:700px;
+}
+
+.docs-table th{
+    background:#f8f9fa;
+    color:#800000;
+    font-size:12px;
+    font-weight:700;
+    white-space:nowrap;
+    padding:8px;
+}
+
+.docs-table td{
+    font-size:12px;
+    vertical-align:middle;
+    white-space:nowrap;
+    padding:8px;
+}
+
+/* ================= TABLE WRAPPER ================= */
+
+.table-responsive{
+    overflow-x:auto;
+    width:100%;
+}
+
+/* ================= FORM ================= */
+
+.form-control,
+.form-select{
+    font-size:13px;
+}
+
+.form-control-sm,
+.form-select-sm{
+    font-size:12px;
+}
+
+/* ================= BUTTONS ================= */
+
+.btn-update{
+    background:#C1121F;
+    color:#fff;
+    border:none;
+    border-radius:10px;
+    font-weight:600;
+    padding:8px 20px;
+    font-size:13px;
+}
+
+.btn-update:hover{
+    background:#E63946;
+    color:#fff;
+}
+
+.btn-checkall{
+    background:#fff;
+    color:#C1121F;
+    border:1px solid #C1121F;
+    border-radius:10px;
+    font-weight:600;
+    padding:8px 15px;
+}
+
+.btn-checkall:hover{
+    background:#C1121F;
+    color:#fff;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:992px){
+
+    .credentials-header{
+        padding:10px 14px;
+    }
+
+    .credential-title{
+        font-size:12px;
+    }
+
+    .info-box{
+        font-size:11px;
+    }
+
+    .docs-table th,
+    .docs-table td{
+        font-size:11px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .credentials-card{
+        border-radius:10px;
+    }
+
+    .credential-item{
+        padding:10px;
+    }
+
+    .docs-table{
+        min-width:600px;
+    }
+
+    .btn-update,
+    .btn-checkall{
+        width:100%;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .credentials-header{
+        text-align:center;
+    }
+
+    .credentials-header h5{
+        font-size:15px;
+    }
+
+    .credential-title{
+        font-size:12px;
+    }
+
+    .label-status{
+        font-size:10px;
+        padding:3px 8px;
+    }
+
+    .docs-table{
+        min-width:550px;
+    }
+
+}

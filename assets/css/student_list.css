@@ -1,0 +1,262 @@
+/* ===================== GLOBAL ===================== */
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI', Tahoma, sans-serif;
+}
+
+body {
+    background:#f4f6f9;
+}
+
+
+/* ===================== MAIN CONTENT ===================== */
+
+.main {
+    margin-left:clamp(0px,20vw,250px);
+    width:calc(100% - clamp(0px,20vw,250px));
+    padding:clamp(10px,2vw,20px);
+}
+
+.dashboard-card {
+    margin-top:20px;
+    padding:clamp(12px,2vw,20px);
+    border-radius:15px;
+    overflow-x:auto;
+}
+
+.header-title {
+    font-weight:bold;
+    color:#b30000;
+}
+
+
+/* ===================== TABLE ===================== */
+
+.table thead {
+    background:#b30000;
+    color:white;
+}
+
+.table-responsive {
+    overflow-x:auto;
+}
+
+table {
+    min-width:700px;
+}
+
+
+/* ===================== MODAL ===================== */
+
+.custom-modal {
+    display:none;
+    position:fixed;
+    z-index:9999;
+    inset:0;
+    background:rgba(0,0,0,.45);
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+    overflow-y:auto;
+}
+
+.custom-modal.show {
+    display:flex;
+}
+
+
+.modal-box {
+    width:min(95%,520px);
+    max-height:90vh;
+    background:#fff;
+    border-radius:18px;
+    overflow:hidden;
+    display:flex;
+    flex-direction:column;
+}
+
+
+/* MODAL HEADER */
+
+.modal-header-custom {
+    background:#C1121F;
+    color:#fff;
+    padding:18px 20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.modal-header-custom h4 {
+    margin:0;
+    font-size:20px;
+}
+
+
+.close-btn {
+    background:none;
+    border:none;
+    color:#fff;
+    font-size:24px;
+    cursor:pointer;
+}
+
+
+/* MODAL BODY */
+
+.modal-body-custom {
+    padding:22px;
+    overflow-y:auto;
+}
+
+
+/* MODAL FOOTER */
+
+.modal-footer-custom {
+    display:flex;
+    justify-content:flex-end;
+    gap:10px;
+    padding:15px 20px;
+    background:#fff;
+}
+
+
+/* LOCK PAGE SCROLL WHEN MODAL OPEN */
+
+body.modal-open {
+    overflow:hidden;
+}
+
+
+/* ===================== FORM ===================== */
+
+.form-label {
+    font-weight:600;
+    margin-bottom:6px;
+    color:#333;
+}
+
+.form-control,
+.form-select {
+    border-radius:10px;
+    padding:10px 12px;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color:#C1121F;
+    box-shadow:0 0 0 .15rem rgba(139,0,0,.15);
+}
+
+
+/* ===================== BUTTON ===================== */
+
+.btn-maroon {
+    background:#C1121F;
+    color:#fff;
+    border:none;
+}
+
+.btn-maroon:hover {
+    background:#b30000;
+    color:#fff;
+}
+
+
+/* ===================== PAGINATION ===================== */
+
+.pagination .page-link {
+    color:#C1121F;
+}
+
+.pagination .page-item.active .page-link {
+    background-color:#C1121F;
+    border-color:#C1121F;
+    color:#fff;
+}
+
+.pagination .page-link:hover {
+    background-color:#C1121F;
+    border-color:#C1121F;
+    color:#fff;
+}
+
+
+/* ===================== SCROLLBAR ===================== */
+
+.modal-body-custom::-webkit-scrollbar {
+    width:6px;
+}
+
+.modal-body-custom::-webkit-scrollbar-thumb {
+    background:#ccc;
+    border-radius:10px;
+}
+
+
+/* ===================== ANIMATION ===================== */
+
+@keyframes fadeInUp {
+
+    from {
+        opacity:0;
+        transform:translateY(20px) scale(.97);
+    }
+
+    to {
+        opacity:1;
+        transform:translateY(0) scale(1);
+    }
+
+}
+
+
+/* ===================== CLICKABLE CARD ===================== */
+
+.clickable-card {
+    cursor:pointer;
+    transition:.2s;
+}
+
+.clickable-card:hover {
+    transform:scale(1.03);
+    box-shadow:0 6px 15px rgba(0,0,0,.15);
+}
+
+
+/* ===================== TEXT TRANSFORM ===================== */
+
+
+
+input,
+textarea,
+select {
+    text-transform: uppercase;
+}
+
+/* ===================== RESPONSIVE ===================== */
+
+@media(max-width:768px){
+
+    .main {
+        margin-left:0;
+        width:100%;
+        padding:15px;
+    }
+
+    .dashboard-card {
+        padding:15px;
+    }
+
+    .header-title {
+        font-size:22px;
+    }
+
+    .modal-box {
+        width:100%;
+    }
+
+}

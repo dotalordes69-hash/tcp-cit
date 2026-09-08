@@ -1,0 +1,163 @@
+/* ================= EMAIL CARD ================= */
+
+.email-card{
+    border:none;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+    background:#fff;
+    margin-bottom:20px;
+}
+
+/* ================= HEADER ================= */
+
+.email-header{
+    background:#C1121F;
+    color:#fff;
+    padding:12px 16px;
+}
+
+.email-header h5{
+    margin:0;
+    font-size:16px;
+    font-weight:700;
+}
+
+.email-header small{
+    font-size:12px;
+    opacity:.85;
+}
+
+/* ================= TABLE ================= */
+
+.email-table{
+    width:100%;
+}
+
+.email-table th{
+    background:#f8f9fa;
+    color:#800000;
+    font-size:12px;
+    font-weight:700;
+    white-space:nowrap;
+    padding:10px;
+}
+
+.email-table td{
+    font-size:12px;
+    padding:10px;
+    vertical-align:middle;
+}
+
+/* ================= TABLE WRAPPER ================= */
+
+.table-responsive{
+    overflow-x:auto;
+    width:100%;
+}
+
+/* ================= BADGES ================= */
+
+.email-badge{
+    background:#198754;
+    color:#fff;
+    font-size:11px;
+    font-weight:600;
+    padding:4px 10px;
+    border-radius:20px;
+}
+
+/* ================= SUBJECT ================= */
+
+.email-subject{
+    font-weight:600;
+    color:#343a40;
+}
+
+/* ================= MESSAGE PREVIEW ================= */
+
+.email-preview{
+    color:#6c757d;
+    font-size:12px;
+}
+
+/* ================= BUTTONS ================= */
+
+.btn-view-email{
+    background:#C1121F;
+    border:none;
+    color:#fff;
+    border-radius:8px;
+    padding:6px 14px;
+    font-size:12px;
+    font-weight:600;
+}
+
+.btn-view-email:hover{
+    background:#E63946;
+    color:#fff;
+}
+
+/* ================= PAGINATION ================= */
+
+.pagination .page-link{
+    color:#800000;
+}
+
+.pagination .active .page-link{
+    background:#C1121F;
+    border-color:#C1121F;
+}
+
+/* ================= EMPTY STATE ================= */
+
+.no-email{
+    text-align:center;
+    padding:40px 20px;
+    color:#6c757d;
+    font-size:13px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:992px){
+
+    .email-table th,
+    .email-table td{
+        font-size:11px;
+    }
+
+}
+
+@media(max-width:768px){
+
+    .email-card{
+        border-radius:10px;
+    }
+
+    .email-table{
+        min-width:700px;
+    }
+
+}
+
+@media(max-width:576px){
+
+    .email-header{
+        text-align:center;
+    }
+
+    .email-header h5{
+        font-size:15px;
+    }
+
+    .email-table{
+        min-width:600px;
+    }
+
+    .btn-view-email{
+        font-size:11px;
+        padding:5px 12px;
+    }
+
+}

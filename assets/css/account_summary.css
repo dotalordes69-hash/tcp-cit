@@ -1,0 +1,277 @@
+/* ================= PAYMENT CARD ================= */
+
+.payment-card{
+
+    border:none;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    box-shadow:0 3px 10px rgba(0,0,0,.08);
+
+}
+
+
+
+/* ================= HEADER ================= */
+
+.payment-header{
+
+    background:linear-gradient(
+        135deg,
+        #C1121F
+    );
+
+    color:#fff;
+
+    padding:12px 16px;
+
+}
+
+
+.payment-header h5{
+
+    margin:0;
+
+    font-size:16px;
+
+    font-weight:700;
+
+}
+
+
+.payment-header small{
+
+    font-size:12px;
+
+    opacity:.85;
+
+}
+
+
+
+/* ================= BALANCE BOX ================= */
+
+.balance-box{
+
+    background:#fff;
+
+    border-radius:10px;
+
+    padding:10px;
+
+    transition:.2s ease;
+
+}
+
+
+.balance-box:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:0 5px 12px rgba(0,0,0,.10);
+
+}
+
+
+.balance-title{
+
+    font-size:11px;
+
+    color:#6c757d;
+
+    font-weight:600;
+
+}
+
+
+.balance-value{
+
+    font-size:20px;
+
+    font-weight:700;
+
+    color:#C1121F;
+
+}
+
+
+
+/* ================= TABLE ================= */
+
+.table-payment{
+
+    margin-bottom:0;
+
+}
+
+
+.table-payment thead th{
+
+    background:#f8f9fa;
+
+    color:#800000;
+
+    font-size:11px;
+
+    font-weight:700;
+
+    white-space:nowrap;
+
+    padding:8px;
+
+}
+
+
+.table-payment tbody td{
+
+    font-size:11px;
+
+    padding:8px;
+
+    vertical-align:middle;
+
+}
+
+
+
+/* ================= STATUS ================= */
+
+.status-verified,
+.status-pending{
+
+    display:inline-block;
+
+    padding:4px 10px;
+
+    border-radius:20px;
+
+    font-size:11px;
+
+    font-weight:600;
+
+    white-space:nowrap;
+
+}
+
+
+.status-verified{
+
+    background:#198754;
+
+    color:#fff;
+
+}
+
+
+.status-pending{
+
+    background:#ffc107;
+
+    color:#212529;
+
+}
+
+
+
+/* ================= REFERENCE ================= */
+
+.ref-box{
+
+    font-size:11px;
+
+    font-weight:600;
+
+    color:#343a40;
+
+    word-break:break-word;
+
+}
+
+
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:992px){
+
+    .payment-header{
+
+        padding:10px 14px;
+
+    }
+
+    .payment-header h5{
+
+        font-size:15px;
+
+    }
+
+    .balance-box{
+
+        padding:8px;
+
+    }
+
+    .table-payment thead th,
+    .table-payment tbody td{
+
+        font-size:10px;
+
+        padding:7px 5px;
+
+    }
+
+}
+
+
+@media(max-width:768px){
+
+    .payment-card{
+
+        border-radius:10px;
+
+    }
+
+    .balance-value{
+
+        font-size:18px;
+
+    }
+
+    .table-responsive{
+
+        overflow-x:auto;
+
+    }
+
+    .table-payment{
+
+        min-width:600px;
+
+    }
+
+}
+
+
+@media(max-width:576px){
+
+    .payment-header{
+
+        text-align:center;
+
+    }
+
+    .balance-box{
+
+        text-align:center;
+
+    }
+
+    .balance-value{
+
+        font-size:17px;
+
+    }
+
+}
