@@ -3,7 +3,7 @@
 <div class="student-table-card">
 
     <div class="student-table-header">
-        Student List
+        Student Lists
     </div>
 
     <div class="table-responsive">
